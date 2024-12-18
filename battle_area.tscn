@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc3vrja1lp2uj"]
+
+[ext_resource type="Script" path="res://player_local.gd" id="1_pigac"]
+[ext_resource type="Script" path="res://http_request.gd" id="2_hovtu"]
+
+[node name="BattleArea" type="Node2D"]
+
+[node name="PlayerLocal" type="Node2D" parent="."]
+script = ExtResource("1_pigac")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+script = ExtResource("2_hovtu")
